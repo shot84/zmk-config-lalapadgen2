@@ -7,8 +7,7 @@ manifest:
     - name: caksoylar
       url-base: https://github.com/caksoylar
     - name: prospector  # <-- Prospector Scanner
-      url-base: https://github.com/t-ogura 
-  projects:
+      url-base: https://github.com/t-ogura   projects:
     - name: zmk
       remote: zmkfirmware
       revision: v0.3.0
@@ -22,9 +21,5 @@ manifest:
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: v0.3
-    - name: prospector-zmk-module
-      remote: prospector
-      revision: v1.0.0
-      path: modules/prospector-zmk-module
   self:
     path: config
