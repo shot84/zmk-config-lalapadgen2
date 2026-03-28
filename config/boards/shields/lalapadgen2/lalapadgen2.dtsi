@@ -154,15 +154,6 @@
         track-remainders;
     };
 
-// 0329_追加
-    zip_scroll_transform: zip_scroll_transform {
-        compatible = "zmk,input-processor-transform";
-        #input-processor-cells = <0>;
-        type = <INPUT_EV_REL>;
-        y-invert;
-        x-invert;
-    };
-
     trackpad_listener_R: trackpad_listener_R {
         compatible = "zmk,input-listener";
         status = "disabled";
@@ -170,7 +161,7 @@
         input-processors = <&trackpad_key_behaviors_R>,
                            <&zip_xy_scaler 1 5>,
                            <&zip_scroll_scaler 1 16>,          // ← 変更
-                           <&zip_scroll_transform>,          // ← 追加（反転）
+                           <&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT | INPUT_TRANSFORM_X_INVERT)>,          // ← 追加（反転）
                            <&zip_dynamic_xy_scaler>,
                            <&zip_dynamic_scroll_scaler>;
         lowspeedmode {
@@ -178,7 +169,7 @@
             input-processors =  <&trackpad_key_behaviors_R>,
                                 <&zip_xy_scaler 1 15>,
                                 <&zip_scroll_scaler 1 40>,
-                                <&zip_scroll_transform>,      // ← 追加（反転）
+                                <&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT | INPUT_TRANSFORM_X_INVERT)>,      // ← 追加（反転）
                                 <&zip_dynamic_xy_scaler>,
                                 <&zip_dynamic_scroll_scaler>;
         };
