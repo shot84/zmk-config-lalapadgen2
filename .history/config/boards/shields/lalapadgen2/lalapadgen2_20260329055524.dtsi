@@ -168,7 +168,7 @@
             layers = <1>,<2>;
             input-processors =  <&trackpad_key_behaviors_R>,
                                 <&zip_xy_scaler 1 15>,
-                                <&zip_scroll_scaler 1 50>,
+                                <&zip_scroll_scaler 1 40>,
                                 <&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT | INPUT_TRANSFORM_X_INVERT)>,      // ← 追加（反転）
                                 <&zip_dynamic_xy_scaler>,
                                 <&zip_dynamic_scroll_scaler>;
@@ -180,7 +180,7 @@
         device = <&trackpad_split_L>;
         input-processors = <&trackpad_key_behaviors_L>,
                            <&zip_xy_scaler 1 5>,
-                           <&zip_scroll_scaler 1 20>,          // ← 変更
+                           <&zip_scroll_scaler 1 16>,          // ← 変更
                            <&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT | INPUT_TRANSFORM_X_INVERT)>,      // ← 追加（反転）
                            <&zip_dynamic_xy_scaler>,
                            <&zip_dynamic_scroll_scaler>;
@@ -188,7 +188,7 @@
             layers = <1>,<2>;
             input-processors =  <&trackpad_key_behaviors_L>,
                                 <&zip_xy_scaler 1 15>,
-                                <&zip_scroll_scaler 1 50>,
+                                <&zip_scroll_scaler 1 40>,
                                 <&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT | INPUT_TRANSFORM_X_INVERT)>,      // ← 追加（反転）
                                 <&zip_dynamic_xy_scaler>,
                                 <&zip_dynamic_scroll_scaler>;
