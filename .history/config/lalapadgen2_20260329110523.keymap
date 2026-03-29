@@ -44,6 +44,14 @@
             bindings = <&mo 1>, <&mo 2>;
         };
 
+        z_shft: zmk,behavior-hold-tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <250>;
+            bindings = <&kp>, <&kp>;
+        };
+
     };
 
     combos {
