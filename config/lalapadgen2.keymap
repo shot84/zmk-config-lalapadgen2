@@ -79,7 +79,7 @@
             bindings = <
 &kp ESC           &kp F2             &kp LA(LC(LEFT))     &kp LA(LC(RIGHT))         &kp PIPE                                         &kp LA(LC(D))     &kp LA(LC(E))      &kp LA(LC(F))  &kp LA(LC(T))     &kp LC(LA(G))
 &kp TAB           &kp APOS           &kp LS(AMPERSAND)    &kp LS(LEFT_PARENTHESIS)  &kp LS(RIGHT_PARENTHESIS)                        &kp LBKT          &kp RBKT           &kp SQT        &kp LS(LG(DOWN))  &kp LA(LC(RET))
-&kp HASH          &kp PLUS           &kp LS(EXCLAMATION)  &kp LS(QUESTION)          &kp TILDE                                        &kp LG(A)         &kp LG(C)          &kp LG(V)      &kp LC(Q)         &kp LG(PLUS)
+&mt LSHIFT HASH   &kp PLUS           &kp LS(EXCLAMATION)  &kp LS(QUESTION)          &kp TILDE                                        &kp LG(A)         &kp LG(C)          &kp LG(V)      &kp LC(Q)         &kp LG(PLUS)
 &kp LCTRL         &kp ENTER          &kp LS(AT_SIGN)      &kp EQUAL                 &kp RET                    &kp ENTER  &kp DEL    &kp ENTER         &kp ENTER          &kp LG(LA(V))  &kp LG(LS(V))     &kp LG(MINUS)
                   &kp ENTER          &kp RIGHT            &kp DOWN                  &kp LEFT                   &kp UP     &kp LG(Z)  &kp LS(LC(TAB))   &kp LG(LS(Z))      &kp LC(TAB)    &trans
 &trans            &trans             &trans                                                                                                                               &trans         &trans            &trans
@@ -90,13 +90,13 @@
         TERTIARY_LAYER {
             display-name = "tertiary_layer";
             bindings = <
-&kp TAB   &kp N7     &kp N8     &kp N9    &kp MINUS                             &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &kp LS(LC(LG(Z)))
-&kp N0    &kp N4     &kp N5     &kp N6    &kp COLON                             &kp LG(RBKT)  &kp LS(AT)     &kp UP      &kp EQUAL     &kp ENTER
-&kp FSLH  &kp N1     &kp N2     &kp N3    &kp BSLH                              &kp LG(LBKT)  &kp LEFT       &kp DOWN    &kp RIGHT     &kp ENTER
-&trans    &kp LSHFT  &kp LALT   &trans    &kp LC(LG(R))  &kp LC(LS(S))  &trans  &trans        &trans         &trans      &trans        &trans
-          &trans     &kp RIGHT  &kp DOWN  &kp LEFT       &kp UP         &trans  &trans        &trans         &trans      &trans
-&trans    &trans     &trans                                                                                  &trans      &trans        &trans
-&trans    &trans     &trans     &trans    &trans                                &trans        &trans         &trans      &trans        &trans
+&kp TAB           &kp N7     &kp N8     &kp N9    &kp MINUS                             &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(UP)  &kp LC(DOWN)  &kp LS(LC(LG(Z)))
+&kp N0            &kp N4     &kp N5     &kp N6    &kp COLON                             &kp LG(RBKT)  &kp LS(AT)     &kp UP      &kp EQUAL     &kp ENTER
+&mt LSHIFT SLASH  &kp N1     &kp N2     &kp N3    &kp BSLH                              &kp LG(LBKT)  &kp LEFT       &kp DOWN    &kp RIGHT     &kp ENTER
+&trans            &kp LSHFT  &kp LALT   &trans    &kp LC(LG(R))  &kp LC(LS(S))  &trans  &trans        &trans         &trans      &trans        &trans
+                  &trans     &kp RIGHT  &kp DOWN  &kp LEFT       &kp UP         &trans  &trans        &trans         &trans      &trans
+&trans            &trans     &trans                                                                                  &trans      &trans        &trans
+&trans            &trans     &trans     &trans    &trans                                &trans        &trans         &trans      &trans        &trans
             >;
         };
 
