@@ -47,14 +47,24 @@
     combos {
         compatible = "zmk,combos";
 
-        CONBO_ESC {
-            bindings = <&kp ESCAPE>;
+        cmd+w {
+            bindings = <&kp LG(W)>;
             key-positions = <0 1>;
         };
 
-        COMBO_TAB {
+        tab {
             bindings = <&kp TAB>;
             key-positions = <10 11>;
+        };
+
+        cmd+f {
+            bindings = <&kp LG(F)>;
+            key-positions = <13 14>;
+        };
+
+        cmd+option+u {
+            bindings = <&kp LG(LA(U))>;
+            key-positions = <5 6>;
         };
     };
 
