@@ -113,10 +113,10 @@
         SYSTEM_LAYER {
             display-name = "system_layer";
             bindings = <
-&trans  &trans  &trans  &trans  &kp F4                                     &kp F1                &kp F10            &trans              &trans         &trans
-&trans  &trans  &trans  &trans  &kp SEMI                                   &kp LBKT              &kp RBKT           &kp SQT                &kp LS(LG(DOWN))  &trans
-&trans  &trans  &trans  &trans  &kp LS(TILDE)                              &kp LS(LT)            &kp LS(GT)         &kp LS(LG(D))          &kp LG(LS(N4))    &kp LG(LS(N5))
-&trans  &trans  &trans  &trans     &trans      &kp EQUAL  &trans        &trans                &trans             &trans                 &trans            &trans
+&tra  &tra  &tra  &tra  &kp F4                                     &kp F1                &kp F10            &tra              &tra         &tra
+&tra  &tra  &tra  &tra  &kp SEMI                                   &kp LBKT              &kp RBKT           &kp SQT                &kp LS(LG(DOWN))  &tra
+&tra  &tra  &tra  &tra  &kp LS(TILDE)                              &kp LS(LT)            &kp LS(GT)         &kp LS(LG(D))          &kp LG(LS(N4))    &kp LG(LS(N5))
+&tra  &tra  &tra  &trans     &tra      &kp EQUAL  &tra        &trans                &trans             &trans                 &trans            &trans
            &trans     &trans     &trans     &trans         &trans     &kp K_VOLUME_UP  &kp LG(LEFT_BRACKET)  &kp K_VOLUME_DOWN  &kp LG(RIGHT_BRACKET)  &kp C_MUTE
 &trans     &trans     &trans                                                                                                    &trans                 &trans            &trans
 &trans     &trans     &trans     &trans     &trans                                     &trans                &trans             &trans                 &trans            &trans
